@@ -1,0 +1,132 @@
+body{
+
+        background: url('images/yellow_background.png');
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        color: #6b1010;
+
+}
+
+#wrapper{
+
+    width: 900px;
+    margin:auto;
+}
+
+h1{
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#header{
+
+    font-size: 1em;
+    font-weight: normal;
+    width:100%;
+
+}
+
+#title{
+
+    display: inline-block;
+    margin-bottom:auto;
+
+}
+
+#menu{
+
+    display: inline-block;
+    margin-bottom:auto;
+    text-align: right;
+   
+
+}
+
+#menu ul{
+    list-style-type: none;
+}
+
+#menu li{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#slideshow{
+    margin-top: 10px;
+    height: 200px;
+    border-radius: 10px;
+    background-image: url('images/sanfrancisco.jpg');
+    position: relative;
+    box-shadow: 0px 4px 4px #6b1010;
+    margin-bottom: 25px;
+
+}
+
+#slideshow_description{
+
+    position: absolute;
+    bottom:0;
+    width:99%;
+    height: 35px;
+    color:white;
+    font-size:1.2em;
+    background-color: rgba(24,24,24,0.5);
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 5px;
+    padding-top: 10px; 
+}
+
+
+#article{
+    text-align: justify;
+    width:70%;
+    margin-right:15px;
+    float:left;
+}
+
+#introduction{
+    vertical-align: top;
+    position: relative;
+    width: 20%;
+    background-color: #707070;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+    display: inline-block;
+    box-shadow: 0px 5px 5px #705040;
+    margin-top: 20px;
+}
+
+#footer{
+
+    background: url('images/top.png') no-repeat top center, url('images/line.png') repeat-x top, url('images/shadow.png') repeat-x top;
+    margin-top: 50px;
+}
+
+
+#footer1, #footer2, #footer3{
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+#footer1{
+    width: 25%;
+
+}
+
+#footer2{
+    border:1px solid #202020;
+    margin-right:5px;
+}
+
+#footer3{
+
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+    width: 40px;
+    padding-left: 2px;
+
+}
