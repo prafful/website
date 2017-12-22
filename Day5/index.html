@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Personal Website</title>  
+        <link rel="stylesheet" href="style.css" />  
+    </head>
+    <body>
+        Funny Cartoon<br>
+    <video id="cartoon" width="320" height="240" controls poster="https://www.seoclerk.com/pics/want55033-1LAR5w1506595825.png">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/mov_bbb1.ogg" type="video/ogg">   
+        <source src="https://www.w3schools.com/html/mov_bbb2.wmv" type="video/wmv">     
+            
+    </video> 
+    <br>
+    <button id="playBtn" onclick="playVideo()">Play</button> 
+    <button id="pauseBtn" onclick="pauseVideo()">Pause</button>   
+
+
+
+        <script>
+            var myVideo = document.getElementById('cartoon');
+            var playButton = document.getElementById('playBtn');
+            var pauseButton = document.getElementById('pauseBtn');
+
+            function playVideo(){
+                console.log("playVideo called");
+                if(myVideo.paused){
+                    myVideo.play();
+                    playButton.disabled = true;
+                    pauseButton.disabled = false;
+
+                }
+                else{
+                    console.log("Video is already playing.")
+                }
+
+            }   
+
+            function pauseVideo(){
+                console.log("pauseVideo called");
+                if(!myVideo.paused){
+                    myVideo.pause();
+                    playButton.disabled = false;
+                    pauseButton.disabled = true;
+                }
+                else{
+                    console.log("Video is already paused.");
+                }
+
+
+            }
+        
+        </script>
+    </body>    
+
+    
+
+</html>

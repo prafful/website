@@ -1,0 +1,19 @@
+body{
+
+        background: url('images/yellow_background.png');
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        color: #6b1010;
+
+}
+
+video{
+
+    background-color: goldenrod;
+}
+
+canvas{
+    
+        background-color: goldenrod;
+    }
+    
+    

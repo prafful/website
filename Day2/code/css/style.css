@@ -1,0 +1,41 @@
+.labelstyle{
+    float: left;
+    width: 29%; 
+    padding-right: 16px;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 3px #ccc;
+}
+
+
+.inputvalue{
+
+    font-size: inherit;
+    font-family: inherit; 
+    padding: 5px 4px;
+    letter-spacing: normal;
+    color: rgb(255, 102, 0);
+
+}
+
+#myButton{
+    color: red;
+    padding: 10px;
+    margin: 10px;
+    font-family: serif;
+    border-radius: 10px;
+    font-size: 18px;
+    
+
+}
+
+span {
+    color:blue;
+}
+
+form{
+    background-color: #dccfcf;
+}
+
+table{
+    background-color: greenyellow;
+}
