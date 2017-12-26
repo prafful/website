@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Personal Website</title>  
+        <link rel="stylesheet" href="style.css" />  
+    </head>
+    <body>
+      <canvas id="myCanvas" width="320" height="240">
+
+      </canvas>
+
+        <script>
+            var canvasStand = document.getElementById("myCanvas");
+            var brush = canvasStand.getContext("2d");
+            /*
+            brush.moveTo(0,0)
+            brush.lineTo(320,240);
+            brush.stroke();
+            brush.fillStyle = 'pink';
+            brush.fillRect(10, 10, 100, 100);
+            */
+            radius = 0;
+            function doAnimation(){
+                brush.clearRect(0,0,320, 240 );
+
+                //color the background
+                brush.fillStyle = "#effaaf";
+                brush.fillRect(0, 0, 320, 240);
+
+                //draw circle
+                brush.beginPath();
+                radius = 25 + 150 * Math.abs(Math.cos(radius));
+                brush.arc(160, 120, radius, 0, Math.PI*2, false);
+                brush.closePath();
+
+                //color the circle
+                brush.fillStyle="#006699";
+                brush.fill();
+
+                radius += Math.PI/64;  
+                
+                requestAnimationFrame(doAnimation);
+            }
+
+            doAnimation();
+
+
+
+            
+        
+        </script>
+    </body>    
+
+    
+
+</html>

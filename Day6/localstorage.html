@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Personal Website</title>  
+   
+    </head>
+    <body>
+        <h1>Local Storage ToDo</h1>
+        <input type="text" name="" id="task"> 
+        <input type="submit" value="Add Task" onclick="addTask()">
+
+    <br>
+    <br>
+    
+    <div id="result">
+    </div>
+    
+    
+    <script>
+    // Check browser support
+    var task_array = new Array();    
+    var mytask = document.getElementById("task");
+
+    function addTask(){
+
+            if (typeof(localStorage) !== "undefined") {
+                var tasktoadd = mytask.value;
+                
+                task_array.push(tasktoadd);
+                console.log(task_array);
+                localStorage.setItem("taskList", task_array);
+                // Store
+                //localStorage.setItem("mySurName", "John");
+                // Retrieve
+                //document.getElementById("result").innerHTML = localStorage.getItem("mySurName");
+        }
+    }  
+    
+
+    
+    </script>
+    </body>    
+
+    
+
+</html>
