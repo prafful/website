@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+<body>
+<h1>New HTML5 Elements</h1>
+<br>
+<form action="">
+Select your number: <input type=number min=0 max=30 step=5 value=20  readonly><br><br>
+Select color: <input type="color" name="myColor" id="color"> <br><br>
+Select date (step=7 and min=2014-09-08): <input type="date" name="myDate" id="date" min=2017-12-03 step=7 max=2017-12-31 > <br><br>
+Select time: <input type="time" min=10:00 max=18:00 step=900></time><br><br>
+Select time: <input type="time" min=10:00 max=18:00 step=7200></time><br><br>
+Select on slider: <input type="range" name="mySlider" id="range" min=0 max=100 value=40 step=5><br><br>
+Input email: <input type="email" name="myEmail" id="email" required placeholder="abc@xyz.com"><br><br>
+Website: <input type="url" name="myUrl" value="" required ><br><br>
+Select hobby: 
+<datalist id='hobbylist'>
+    <option>Swimming</option>
+    <option>Driving</option>
+    <option>Gliding</option>
+    <option>Dancing</option>
+    <option >Trekking</option>
+</datalist>
+<input type="text" name="myHobby" id="hobby" list="hobbylist" value="Driveng"  spellcheck="true">
+<br><br>
+Username: <input type="text" name="username" id="username" pattern="[a-zA-Z]{5,10}" autofocus ><br><br>
+<input type=file multiple id="fileinput" accept="image/*">
+<br><br>
+
+
+<input type="submit" value="Check">
+
+</form>
+
+
+
+</body>
+</html>
