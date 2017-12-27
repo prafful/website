@@ -1,0 +1,6 @@
+F:\MyGoogleDrive\Google Drive\Corporate trainings stuffs\Codes and Topics\HTML 5\Offline App\OfflineApp\OfflineApp\bin\OfflineApp.dll.config
+F:\MyGoogleDrive\Google Drive\Corporate trainings stuffs\Codes and Topics\HTML 5\Offline App\OfflineApp\OfflineApp\bin\OfflineApp.dll
+F:\MyGoogleDrive\Google Drive\Corporate trainings stuffs\Codes and Topics\HTML 5\Offline App\OfflineApp\OfflineApp\bin\OfflineApp.pdb
+F:\MyGoogleDrive\Google Drive\Corporate trainings stuffs\Codes and Topics\HTML 5\Offline App\OfflineApp\OfflineApp\obj\Debug\OfflineApp.csprojResolveAssemblyReference.cache
+F:\MyGoogleDrive\Google Drive\Corporate trainings stuffs\Codes and Topics\HTML 5\Offline App\OfflineApp\OfflineApp\obj\Debug\OfflineApp.dll
+F:\MyGoogleDrive\Google Drive\Corporate trainings stuffs\Codes and Topics\HTML 5\Offline App\OfflineApp\OfflineApp\obj\Debug\OfflineApp.pdb

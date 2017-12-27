@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html>
+<head>
+
+    <title>Validation Demo</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form>  
+        <label>Email</label>
+        <input type="email" name="TxtEmail"
+               id="TxtEmail" required />
+
+        <label>User Name</label>
+        <input type="text" name="username"
+               id="username" pattern="[a-zA-Z ]{5,10}" />
+
+        <label>Age</label>
+        <input type="number" name="TxtAge"
+               id="TxtAge" min="10" max="50" />
+
+        <br /><input type="submit" value="Register" />
+    </form>
+</body>
+</html>

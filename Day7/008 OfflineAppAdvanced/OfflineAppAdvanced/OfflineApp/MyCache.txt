@@ -1,0 +1,9 @@
+﻿CACHE MANIFEST
+# ver 2
+
+CACHE:
+/Styles/Style.css
+
+
+FALLBACK:
+OnlineStyles\Style3.css OfflineStyles\Style4.css

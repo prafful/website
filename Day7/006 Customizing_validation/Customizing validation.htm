@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html>
+<head>
+    <script src="jquery-1.4.4.min.js"></script>
+    <title>Validation Demo</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+    <script type="text/javascript">
+        function OnInvalidEmail()
+        {
+            event.preventDefault();
+            var element = event.srcElement;
+            var validity = element.validity;
+            if (validity.valueMissing) {
+                $('.MissingEmailSpan').show();
+            }
+            else if (validity.typeMismatch) {
+                $('.InvalidEmailSpan').show();
+            }
+        }
+        function OnInvalidUserName() {
+            event.preventDefault();
+            var element = event.srcElement;
+            var validity = element.validity;
+            if (validity.patternMismatch) {
+                $('.InvalidUserNameSpan').show();
+            }
+        }
+        function OnInvalidAge() {
+            event.preventDefault();
+            var element = event.srcElement;
+            var validity = element.validity;
+            if (validity.badInput) {
+                $('.InvalidAgeSpan').show();
+            }
+            else if (validity.rangeOverflow || validity.rangeUnderflow) {
+                $('.AgeIsNotInRangeSpan').show();
+            }
+        }
+    </script>
+    <style>
+        .invalid {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form>
+        <label>Email</label>
+        <input type="email" name="TxtEmail"
+               id="TxtEmail" oninvalid="OnInvalidEmail();" required/>
+        <span class="MissingEmailSpan invalid">Email Missing</span>
+        <span class="InvalidEmailSpan invalid">Invalid email</span>
+
+
+        <label>User Name</label>
+        <input type="text" name="username"
+               id="username" pattern="[a-zA-Z ]{5,10}" oninvalid="OnInvalidUserName();"  />
+        <span class="InvalidUserNameSpan invalid">Username not matching with pattern</span>
+
+        <label>Age</label>
+        <input type="number" name="TxtAge"
+               id="TxtAge" min="10" max="50" oninvalid="OnInvalidAge();" />
+        <span class="AgeIsNotInRangeSpan invalid">Age must be be between 10 and 50</span>
+        <span class="InvalidAgeSpan invalid">Invalid Age</span>
+        <br /><input type="submit" value="Register" onclick="$('.invalid').hide();" />
+    </form>
+</body>
+</html>

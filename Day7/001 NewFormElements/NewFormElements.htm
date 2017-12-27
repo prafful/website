@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Web Forms API</title>
+
+    <style>
+        label {
+            margin-top: 20px;
+            display: block;
+        }
+
+        input {
+            width: 200px;
+        }
+
+            input[type=submit] {
+                width: auto;
+            }
+
+        .col {
+            display: table-cell;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+   
+
+    <form method="post" action="NewURL"> 
+      
+            <label for="yearsInDev">Number Demo:</label>
+            <input type="number" name="MyNuberElement" id="MyNumberElement" />
+
+            <label for="devExperienceRange">Range Demo:</label>
+            <input type="range" name="MyRangeElement" id="MyRangeElement"/>
+       
+            <label for="bgcolor">Color Demo</label>
+            <input type="color" id="MyColorElement" name="MyColorElement" />
+
+            <label for="arrivalDate">Date Demo</label>
+            <input type="date" id="MyDateElement" name="MyDateElement" />
+
+            <label id="arrivalTime">Time Demo</label>
+            <input type="time" id="MyTimeElement" name="MyTimeElement"/>
+
+
+            <label for="arrivalDTLocal">DateTime Local Demo</label>
+            <input type="datetime-local" id="MyDateTimeLElement" name="MyDateTimeLElement" />
+
+            <label id="arrivalDT">DateTime Demo</label>
+            <input type="datetime" id="MyDateTimeElement" name="MyDateTimeElement" />
+
+
+            <label for="birthMonth">Birth Month</label>
+            <input type="month" id="MyMonthElement" name="MyMonthElement" autofocus />
+
+            <label for="vacationWeek">Vacation Week</label>
+            <input type="week" id="MyWeekElement" name="MyWeekElement" />
+        
+            <input type="text" placeholder="Enter Value" id="MyPlaceHolderControl" 
+               name="MyPlaceHolderControl" autocomplete="on" />
+
+        <input type="submit" value="Go!" />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </form>
+
+</body>
+</html>

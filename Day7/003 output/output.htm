@@ -1,0 +1,19 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Web Forms API</title>
+
+    
+</head>
+<body>
+ 
+<div oninput=
+        "document.getElementById('MyOutputElement').value =
+        (document.getElementById('input1').valueAsNumber) +
+        (document.getElementById('input2').valueAsNumber)">
+    <input id="input1" name="input1" type="number" value="1"> +
+    <input id="input2" name="input2" type="number" value="2"> =
+    <output id="MyOutputElement">3</output>
+</div>
+</body>
+</html>
