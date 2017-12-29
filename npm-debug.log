@@ -1,0 +1,69 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'nvm' ]
+2 info using npm@4.1.2
+3 info using node@v7.5.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData nvm
+8 silly fetchNamedPackageData nvm
+9 silly mapToRegistry name nvm
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'nvm',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'nvm',
+12 silly mapToRegistry   name: 'nvm',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/nvm
+14 verbose request uri https://registry.npmjs.org/nvm
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 5:29:53 PM
+17 verbose request id c5dd396a5e53e312
+18 http request GET https://registry.npmjs.org/nvm
+19 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+20 info attempt registry request try #2 at 5:30:03 PM
+21 http request GET https://registry.npmjs.org/nvm
+22 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+23 info attempt registry request try #3 at 5:31:03 PM
+24 http request GET https://registry.npmjs.org/nvm
+25 silly fetchPackageMetaData Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+25 silly fetchPackageMetaData     at errnoException (dns.js:28:10)
+25 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+25 silly fetchPackageMetaData  error for nvm { Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+25 silly fetchPackageMetaData     at errnoException (dns.js:28:10)
+25 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+25 silly fetchPackageMetaData   code: 'ENOTFOUND',
+25 silly fetchPackageMetaData   errno: 'ENOTFOUND',
+25 silly fetchPackageMetaData   syscall: 'getaddrinfo',
+25 silly fetchPackageMetaData   hostname: 'registry.npmjs.org',
+25 silly fetchPackageMetaData   host: 'registry.npmjs.org',
+25 silly fetchPackageMetaData   port: 443 }
+26 silly rollbackFailedOptional Starting
+27 verbose stack TypeError: Cannot read property 'path' of null
+27 verbose stack     at Installer.rollbackFailedOptional (C:\Program Files\nodejs\node_modules\npm\lib\install.js:511:29)
+27 verbose stack     at Array.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+27 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+27 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:18:7
+27 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:337:5
+27 verbose stack     at Array.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+27 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+27 verbose stack     at chain (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+27 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:294:5
+27 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:16:22
+28 verbose cwd C:\Users\Pradhi\Desktop\Desktop1\IIHT\MEPZ 18 Dec 2017 to Jan 31 2018\Code
+29 error Windows_NT 10.0.16299
+30 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "nvm"
+31 error node v7.5.0
+32 error npm  v4.1.2
+33 error Cannot read property 'path' of null
+34 error If you need help, you may report this error at:
+34 error     <https://github.com/npm/npm/issues>
+35 verbose exit [ 1, true ]
