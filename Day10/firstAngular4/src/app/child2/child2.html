@@ -1,0 +1,52 @@
+<p> child2 works!</p> {{myScore}} <br/>
+<ul>
+    <li> {{ myScore[0]}}</li>
+    <li> {{ myScore[1]}}</li>
+    <li> {{ myScore[2]}}</li>
+    <li> {{ myScore[3]}}</li>
+    <li> {{ myScore[4]}}</li>
+</ul>
+Using *ngFor: <br/>
+<ul>
+  <li *ngFor="let score of myScore"> 
+    {{ score}}
+  </li>
+  
+</ul><br>
+{{tasks[0].name}} score is {{tasks[0].score}}
+<table border=1>
+    <tr>
+        <th>Name</th>
+        <th>Score</th>
+    </tr>
+    <tr *ngFor="let user of tasks">
+        <td>
+                {{user.name | uppercase}}
+        </td>
+        <td>
+            {{user.score}}
+         </td>
+
+    </tr>
+    
+
+</table>
+<br/>
+<hr>
+
+<div *ngIf="age === 35; then doThis else doThat"> ngIf condition</div>
+<ng-template #doThis>I am 30</ng-template>
+<ng-template #doThat>You do not know my age</ng-template>
+
+
+
+<div *ngIf="display == 5">
+    Current Date: {{ current_date | date:"dd/MM/yy" }} <br>
+    Salary: {{ salary | currency:"INR" }} <br>
+    Friends: {{ friends | sort }}
+    Score: {{ myScore | sort:"numDescending" }}
+</div>
+
+
+
+<br/>
