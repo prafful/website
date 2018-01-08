@@ -1,0 +1,19 @@
+<p>
+  template-form works!
+</p>
+
+<h2>Template Driven Form</h2>
+<form #skillForm="ngForm" (ngSubmit)="submitUserSkill(skillForm.value)">
+  Technology Name: <input type="text" name="technologyName" id="" ngModel> <br>
+  Experience:      <input type="text" name="totalExperience" id="" ngModel> <br>
+  <select name="skillStatus" id="" ngModel>
+    <option value="Beginner">Beginner</option>
+    <option value="Amateur">Amateur</option>
+    <option value="Expert">Expert</option>
+    
+  </select>
+
+  <br>
+  <input type="submit" value="Submit">
+
+</form>

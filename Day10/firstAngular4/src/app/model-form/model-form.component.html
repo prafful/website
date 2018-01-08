@@ -1,0 +1,20 @@
+<p>
+  model-form works!
+</p>
+
+
+<h2>Model Driven Form</h2>
+<form [formGroup]="skillForm" (ngSubmit)="submitUserSkill(skillForm.value)">
+  Technology Name: <input type="text" name="technologyName" id="" formControlName="tn"> <br>
+  Experience:      <input type="number" name="totalExperience" id="" formControlName="te"> <br>
+  <select name="skillStatus" id="" formControlName="ss">
+    <option value="Beginner">Beginner</option>
+    <option value="Amateur" >Amateur</option>
+    <option value="Expert">Expert</option>
+    
+  </select>
+
+  <br>
+  <input type="submit" value="Submit" [disabled]="!skillForm.valid" >
+
+</form>
