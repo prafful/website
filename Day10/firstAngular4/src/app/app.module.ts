@@ -20,6 +20,7 @@ import { ModelFormComponent } from './model-form/model-form.component';
 import { Consume1Component } from './consume1/consume1.component';
 import { Consume2Component } from './consume2/consume2.component';
 import { DataServiceService } from './data-service.service';
+import { SearchFilterPipe } from './search-filter.pipe';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { DataServiceService } from './data-service.service';
     TemplateFormComponent,
     ModelFormComponent,
     Consume1Component,
-    Consume2Component
+    Consume2Component,
+    SearchFilterPipe
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataServiceService } from '../data-service.service';
+import { User } from '../user';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-consume2',
@@ -7,6 +9,10 @@ import { DataServiceService } from '../data-service.service';
   styleUrls: ['./consume2.component.css']
 })
 export class Consume2Component implements OnInit {
+
+  user:User[];
+  promiseUser:Promise<User[]>;
+  observableUser:Observable<User[]>;
 
   constructor(private ds:DataServiceService) { 
 
@@ -17,11 +23,27 @@ export class Consume2Component implements OnInit {
   }
 
   ngOnInit() {
-    this.getRemoteData_Local();
+    this.getRemoteData();
   }
 
-  getRemoteData_Local(){
+  getRemoteData(){
     console.log(this.ds.getRemoteData());
+    //promise call
+    /*
+    this.promiseUser = this.ds.getRemoteData();
+    this.promiseUser.then(
+      user => this.user = user
+    );
+    */
+
+    //observable call
+    
+    this.observableUser = this.ds.getRemoteData();
+    this.observableUser.subscribe(
+                            user => this.user = user
+                                  );
+
+    console.log(this.user);
   }
 
 }
